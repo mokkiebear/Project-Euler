@@ -6,7 +6,7 @@ What is the largest prime factor of the number 600851475143 ?
 let num = 600851475143;
 let end = Math.round(Math.sqrt(num));
 let result = 1;
-for (let i = 1; i < end; i++){
+for (let i = 1; i <= end; ++i){
     if (num % i == 0 && isPrime(i)){
         if (i > result){
             result = i;
